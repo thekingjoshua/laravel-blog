@@ -1,1 +1,5 @@
-hello from pages.index
+<x-layout>
+
+    
+
+</x-layout>
