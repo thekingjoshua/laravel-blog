@@ -20,7 +20,7 @@ class PostFactory extends Factory
         return [
             "title" => fake()->sentence(12),
             "content" => fake()->paragraph(25),
-            "author_id" => Author::factory()
+            "author_id" => Author::inRandomOrder()->first()->id
         ];
     }
 }
