@@ -15,6 +15,13 @@ class AuthorsTableSeeder extends Seeder
     {
         DB::table('authors')->insert([
             [
+                "name" => "Joshua Erughe",
+                "email" => "joshuaerughe@gmail.com",
+                "bio" => "A fullstack developer.",
+                "created_at" => now(),
+                "updated_at" => now()
+            ],
+            [
                 "name" => "John Doe",
                 "email" => "johndoe@gmail.com",
                 "bio" => "A passionate tech blogger and writer",
