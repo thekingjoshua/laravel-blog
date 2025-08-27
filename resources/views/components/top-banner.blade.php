@@ -23,7 +23,7 @@
                 </div>
                 <div class="slider-single">
                     <div class="post-thumb position-relative">
-                        <div class="thumb-overlay position-relative" style="background-image: url(assets/imgs/news/news-17.jpg)">
+                        <div class="thumb-overlay position-relative" style="background-image: url({{asset('imgs/news/news-17.jpg')}})">
                             <div class="post-content-overlay">
                                 <div class="container">
                                     <div class="entry-meta meta-0 font-small mb-20">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="slider-single">
                     <div class="post-thumb position-relative">
-                        <div class="thumb-overlay position-relative" style="background-image: url(assets/imgs/news/news-18.jpg)">
+                        <div class="thumb-overlay position-relative" style="background-image: url({{asset('imgs/news/news-18.jpg')}})">
                             <div class="post-content-overlay">
                                 <div class="container">
                                     <div class="entry-meta meta-0 font-small mb-20">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="slider-single">
                     <div class="post-thumb position-relative">
-                        <div class="thumb-overlay position-relative" style="background-image: url(assets/imgs/news/news-19.jpg)">
+                        <div class="thumb-overlay position-relative" style="background-image: url({{asset('imgs/news/news-19.jpg')}})">
                             <div class="post-content-overlay">
                                 <div class="container">
                                     <div class="entry-meta meta-0 font-small mb-20">
