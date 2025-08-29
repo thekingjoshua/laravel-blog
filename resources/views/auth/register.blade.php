@@ -45,7 +45,7 @@
                                     <input class="form-control" required="" type="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" required="" type="password" name="password" placeholder="Confirm password">
+                                    <input class="form-control" required="" type="password" name="confirm_password" placeholder="Confirm password">
                                 </div>
                                 <div class="login_footer form-group">
                                     <div class="chek-form">
@@ -54,7 +54,7 @@
                                             <label class="form-check-label" for="exampleCheckbox1"><span>I agree to terms &amp; Policy.</span></label>
                                         </div>
                                     </div>
-                                    <a class="text-muted" href="#">Lean more</a>
+                                    <a class="text-muted" href="#">Learn more</a>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="button button-contactForm btn-block">Submit &amp; Register</button>
@@ -64,10 +64,9 @@
                                 <span> or</span>
                             </div>
                             <ul class="btn-login list_none text-center mb-15">
-                                <li><a href="#" class="btn btn-facebook"><i class="elegant-icon social_facebook  mr-5"></i>Facebook</a></li>
-                                <li><a href="#" class="btn btn-google"><i class="elegant-icon social_googleplus mr-5"></i>Google</a></li>
+                                <li><a href="#" class="btn btn-google"><i class="elegant-icon mr-5"></i>Google</a></li>
                             </ul>
-                            <div class="text-muted text-center">Already have an account? <a href="page-login.html">Sign up now</a></div>
+                            <div class="text-muted text-center">Already have an account? <a href="{{route('login')}}">Login now</a></div>
                         </div>
                     </div>
                 </div>
