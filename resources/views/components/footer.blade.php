@@ -69,12 +69,6 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copy-right pt-30 mt-20 wow fadeInUp animated">
-                <p class="float-md-left font-small text-muted">© 2020, Stories - Personal Blog HTML Template </p>
-                <p class="float-md-right font-small text-muted">
-                    Design by <a href="https://alithemes.com" target="_blank">AliThemes</a> | All rights reserved
-                </p>
-            </div>
         </div>
     </footer>
     <!-- End Footer -->
