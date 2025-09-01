@@ -9,5 +9,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 
+Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
 
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
