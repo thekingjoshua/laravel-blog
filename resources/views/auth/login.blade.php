@@ -34,12 +34,13 @@
                             <div class="heading_s1 text-center">
                                 <h3 class="mb-30 font-weight-900">Login</h3>
                             </div>
-                            <form method="post">
+                            <form method="post" action="{{ route('login.authenticate') }}">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="text" required="" class="form-control" name="email" placeholder="Your Email">
+                                    <input type="text" required="" class="form-control" name="email" placeholder="Your Email" value="joshuaerughe@gmail.com">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Password" value="okay">
                                 </div>
                                 <div class="login_footer form-group">
                                     <div class="chek-form">
