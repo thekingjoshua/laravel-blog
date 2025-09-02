@@ -34,9 +34,10 @@
                             <div class="heading_s1 text-center">
                                 <h3 class="mb-30 font-weight-900">Create an account</h3>
                             </div>
-                            <form method="post">
+                            <form method="post" action="{{route('register.store')}}">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="text" required="" class="form-control" name="username" placeholder="Username">
+                                    <input type="text" required="" class="form-control" name="name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" required="" class="form-control" name="email" placeholder="Email">
@@ -45,7 +46,7 @@
                                     <input class="form-control" required="" type="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" required="" type="password" name="confirm_password" placeholder="Confirm password">
+                                    <input class="form-control" required="" type="password" name="password_confirmation" placeholder="Confirm password">
                                 </div>
                                 <div class="login_footer form-group">
                                     <div class="chek-form">
@@ -57,7 +58,7 @@
                                     <a class="text-muted" href="#">Learn more</a>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="button button-contactForm btn-block">Submit &amp; Register</button>
+                                    <button type="submit" class="button button-contactForm btn-block">Submit</button>
                                 </div>
                             </form>
                             <div class="divider-text-center mt-15 mb-15">
