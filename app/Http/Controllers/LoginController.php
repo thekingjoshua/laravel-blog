@@ -9,20 +9,30 @@ use Illuminate\View\View;
 
 class LoginController extends Controller
 {
-    public function login(): View{
+    public function login(): View
+    {
         return view("auth.login");
     }
 
-    public function authenticate(Request $request){
+    public function authenticate(Request $request)
+    {
         $credentials = $request->validate([
             "email" => 'required|string|email|max:100',
             "password" => 'required|string'
         ]);
 
-        if(Auth::attempt($credentials)){
+        if (Auth::attempt($credentials)) {
             echo 'valid. Login successful';
-        }else{
+        } else {
             echo 'invalid. Login not successful';
         }
+    }
+
+    public function logout(Request $request)
+    {
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }
