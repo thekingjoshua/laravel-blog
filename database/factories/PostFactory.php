@@ -22,6 +22,7 @@ class PostFactory extends Factory
             "title" => fake()->realText(50),
             "content" => fake()->realText(),
             "user_id" => User::where('role', 'author')->inRandomOrder()->first()->id,
+            "published_at" => now()
         ];
     }
 }
