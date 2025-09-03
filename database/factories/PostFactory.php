@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Author;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,7 +21,7 @@ class PostFactory extends Factory
         return [
             "title" => fake()->realText(50),
             "content" => fake()->realText(),
-            "author_id" => Author::inRandomOrder()->first()->id
+            "user_id" => User::where('role', 'author')->inRandomOrder()->first()->id,
         ];
     }
 }
