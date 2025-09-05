@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Author;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
@@ -18,10 +19,14 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
+        $title = fake()->realText(50);
+
         return [
-            "title" => fake()->realText(50),
+            "title" => $title,
             "content" => fake()->realText(),
             "user_id" => User::where('role', 'author')->inRandomOrder()->first()->id,
+            "slug" => Str::slug($title),
+            "excerpt" => fake()->text(100)
         ];
     }
 }
