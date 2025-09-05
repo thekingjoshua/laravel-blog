@@ -26,7 +26,8 @@ class PostFactory extends Factory
             "content" => fake()->realText(),
             "user_id" => User::where('role', 'author')->inRandomOrder()->first()->id,
             "slug" => Str::slug($title),
-            "excerpt" => fake()->text(100)
+            "excerpt" => fake()->text(100),
+            "status" => fake()->randomElement(['draft', 'published'])
         ];
     }
 }
